@@ -1,0 +1,94 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: $nav-height;
+  background: linear-gradient(160deg, $white 0%, $off-white 100%);
+}
+
+.container {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-3xl;
+  align-items: center;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: $spacing-2xl;
+    text-align: center;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.heading {
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-bold;
+  color: $navy-finyo;
+  line-height: 1.1;
+
+  @include mobile {
+    font-size: $font-size-2xl;
+  }
+
+  @include tablet {
+    font-size: $font-size-3xl;
+  }
+}
+
+.highlight {
+  color: $green-pastel;
+}
+
+.subtitle {
+  font-size: $font-size-lg;
+  color: rgba($navy-finyo, 0.75);
+  line-height: 1.7;
+  max-width: 520px;
+
+  @include mobile {
+    max-width: 100%;
+    font-size: $font-size-base;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+
+  @include mobile {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    order: -1;
+  }
+}
+
+.imageDecor {
+  position: relative;
+  width: 380px;
+
+  @include mobile {
+    width: 260px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

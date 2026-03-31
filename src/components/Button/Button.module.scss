@@ -1,0 +1,44 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  border-radius: $radius-md;
+  transition: all $transition-base;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+
+.primary {
+  background-color: $navy-finyo;
+  color: $white;
+
+  &:hover {
+    background-color: color.adjust($navy-finyo, $lightness: 8%);
+    transform: translateY(-1px);
+  }
+}
+
+.secondary {
+  background-color: $green-finyo;
+  color: $navy-finyo;
+
+  &:hover {
+    background-color: color.adjust($green-finyo, $lightness: -5%);
+    transform: translateY(-1px);
+  }
+}
+
+.outline {
+  background-color: transparent;
+  color: $navy-finyo;
+  border: 1.5px solid $navy-finyo;
+
+  &:hover {
+    background-color: $navy-finyo;
+    color: $white;
+    transform: translateY(-1px);
+  }
+}

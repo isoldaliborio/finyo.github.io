@@ -1,0 +1,73 @@
+.footer {
+  background-color: $navy-finyo;
+  color: $white;
+  padding: $spacing-2xl 0 $spacing-lg;
+}
+
+.container {
+  @include container;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: $spacing-lg;
+  border-bottom: 1px solid rgba($white, 0.15);
+
+  @include mobile {
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.title {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+}
+
+.tagline {
+  font-size: $font-size-sm;
+  color: $green-finyo;
+  font-weight: $font-weight-light;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: rgba($white, 0.4);
+  font-weight: $font-weight-light;
+  line-height: 1.5;
+  max-width: 420px;
+  margin-top: $spacing-xs;
+}
+
+.links {
+  display: flex;
+  gap: $spacing-lg;
+
+  a {
+    font-size: $font-size-sm;
+    color: rgba($white, 0.8);
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.bottom {
+  padding-top: $spacing-lg;
+  text-align: center;
+
+  p {
+    font-size: $font-size-sm;
+    color: rgba($white, 0.5);
+  }
+}
