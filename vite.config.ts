@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // Use '/' when custom domain (finyo.co.uk) is active, otherwise '/finyo.github.io/'
-  base: process.env.CUSTOM_DOMAIN ? '/' : '/finyo.github.io/',
+  base: '/finyo.github.io/',
   build: {
     outDir: 'dist',
   },
