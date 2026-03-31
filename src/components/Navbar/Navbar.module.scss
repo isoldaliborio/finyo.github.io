@@ -6,6 +6,7 @@
   height: $nav-height;
   background-color: rgba($white, 0.95);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid $light-grey;
 }
@@ -28,30 +29,45 @@
   }
 }
 
-.nav {
+.desktopNav {
   display: flex;
   align-items: center;
   gap: $spacing-lg;
 
   @include mobile {
+    display: none;
+  }
+}
+
+// Mobile overlay — sibling to navbar, outside backdrop-filter context
+.mobileMenu {
+  display: none;
+
+  @include mobile {
+    display: block;
     position: fixed;
     top: $nav-height;
     left: 0;
     right: 0;
     bottom: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: $spacing-2xl;
-    gap: $spacing-xl;
     background-color: $white;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
+    z-index: 999;
     transform: translateX(100%);
     transition: transform $transition-base;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: $spacing-2xl;
+      gap: $spacing-xl;
+      height: 100%;
+    }
   }
 }
 
-.navOpen {
+.mobileMenuOpen {
   @include mobile {
     transform: translateX(0);
   }
