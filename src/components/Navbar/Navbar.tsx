@@ -1,13 +1,23 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import styles from './Navbar.module.scss'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
 
   const isActive = (path: string) => location.pathname === path
+
+  const handleServicesClick = () => {
+    if (location.pathname === '/') {
+      document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/#services')
+    }
+    setMenuOpen(false)
+  }
 
   return (
     <>
@@ -34,6 +44,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
+              <button className={styles.link} onClick={handleServicesClick}>
+                Services
+              </button>
+            </li>
+            <li>
               <Link to="/contact" className={`${styles.link} ${isActive('/contact') ? styles.active : ''}`}>
                 Contact
               </Link>
@@ -52,6 +67,11 @@ export default function Navbar() {
             >
               Home
             </Link>
+          </li>
+          <li>
+            <button className={styles.link} onClick={handleServicesClick}>
+              Services
+            </button>
           </li>
           <li>
             <Link

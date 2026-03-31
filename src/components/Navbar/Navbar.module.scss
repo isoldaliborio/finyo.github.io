@@ -74,6 +74,11 @@
 }
 
 .link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
   font-size: $font-size-base;
   font-weight: $font-weight-medium;
   color: $navy-finyo;
