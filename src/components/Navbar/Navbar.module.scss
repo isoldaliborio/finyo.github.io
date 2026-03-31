@@ -44,6 +44,8 @@
     padding-top: $spacing-2xl;
     gap: $spacing-xl;
     background-color: $white;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     transform: translateX(100%);
     transition: transform $transition-base;
   }
