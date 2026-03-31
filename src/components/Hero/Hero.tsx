@@ -12,7 +12,7 @@ export default function Hero() {
             Your path to <span className={styles.highlight}>financial clarity</span> starts here
           </h1>
           <p className={styles.subtitle}>
-            Hi, I'm Isolda Liborio — a financial coach and planner helping
+            Hi, I'm Isolda Liborio — a financial educator, planner helping
             individuals build confidence with money. Whether you're in the UK
             seeking financial education or in Brazil looking for expert financial
             planning, I'm here to guide you.

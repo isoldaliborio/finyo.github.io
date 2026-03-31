@@ -4,15 +4,17 @@ import styles from './Services.module.scss'
 
 const services = [
   {
-    title: 'Financial Education Coaching',
+    title: 'Financial Education | Paraplanner',
     market: 'United Kingdom',
     description:
-      'Build confidence and knowledge around your personal finances. Through tailored coaching sessions, you will develop the skills to make informed financial decisions, create sustainable budgets, and work towards your goals with clarity.',
+      'Build confidence and knowledge around your personal finances. Through tailored sessions, you will develop the skills to make better and informed financial decisions, create sustainable budgets, and work towards your goals with clarity.',
     features: [
-      'One-to-one coaching sessions',
-      'Personalised financial education plan',
+      'One-to-one sessions',
+      'Personalised strategy financial report',
       'Budgeting and saving strategies',
+      'Investiment education',
       'Debt management guidance',
+      'We provide strategic planning only; no regulated financial advice or product recommendation',
     ],
   },
   {
@@ -25,6 +27,7 @@ const services = [
       'Investment strategy guidance',
       'Retirement planning',
       'Wealth building roadmap',
+      'We provide strategic planning only; no regulated financial advice or product recommendation',
     ],
   },
 ]
