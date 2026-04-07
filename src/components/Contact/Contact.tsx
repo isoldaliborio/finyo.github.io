@@ -20,9 +20,9 @@ export default function Contact() {
             <p>Drop me a message and I'll get back to you within 24 hours.</p>
             <Button
               variant="outline"
-              href="mailto:contact@finyo.co.uk"
+              href="mailto:hello@finyo.co.uk"
             >
-              contact@finyo.co.uk
+              hello@finyo.co.uk
             </Button>
           </div>
 
