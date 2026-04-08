@@ -43,7 +43,7 @@ export default function Contact() {
             <p>Schedule a free introductory call to discuss your financial goals.</p>
             <Button
               variant="primary"
-              href="https://calendly.com/finyo-isoldaliborio/financial-planning-service"
+              href="https://calendly.com/finyo-isoldaliborio"
             >
               Book a free call
             </Button>
