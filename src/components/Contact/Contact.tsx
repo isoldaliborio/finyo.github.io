@@ -1,7 +1,18 @@
+import { useEffect } from 'react'
 import Button from '../Button/Button'
 import styles from './Contact.module.scss'
 
 export default function Contact() {
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://assets.calendly.com/assets/external/widget.js'
+    script.async = true
+    document.body.appendChild(script)
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
+
   return (
     <section className={styles.contact}>
       <div className={styles.container}>
@@ -32,7 +43,7 @@ export default function Contact() {
             <p>Schedule a free introductory call to discuss your financial goals.</p>
             <Button
               variant="primary"
-              href="https://calendly.com"
+              href="https://calendly.com/finyo-isoldaliborio/financial-planning-service"
             >
               Book a free call
             </Button>
@@ -41,13 +52,11 @@ export default function Contact() {
 
         <div className={styles.calendly}>
           <h3 className={styles.calendlyTitle}>Schedule directly</h3>
-          <div className={styles.calendlyEmbed}>
-            <p className={styles.placeholder}>
-              Calendly booking widget will be embedded here.
-              <br />
-              <span>Replace this with your Calendly inline embed code.</span>
-            </p>
-          </div>
+          <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/finyo-isoldaliborio/financial-planning-service"
+            style={{ minWidth: '320px', height: '700px' }}
+          />
         </div>
       </div>
     </section>
