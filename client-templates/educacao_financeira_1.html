@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano de Ação — Finyo</title>
+<link rel="stylesheet" href="action_plan_template.css">
+<style>
+  .edu-card {
+    background: #fff;
+    border: 0.5px solid #d3d1c7;
+    border-radius: 14px;
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .edu-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0.85rem;
+  }
+
+  .edu-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+  }
+
+  .edu-icon-blue   { background: #E6F1FB; }
+  .edu-icon-green  { background: #E2F5EE; }
+  .edu-icon-orange { background: #FEF0E6; }
+  .edu-icon-purple { background: #F0EEFF; }
+  .edu-icon-yellow { background: #FFF9E6; }
+  .edu-icon-red    { background: #FEECEC; }
+
+  .edu-card-title { font-size: 15px; font-weight: 700; color: #1a1a18; }
+  .edu-card-subtitle { font-size: 12px; color: #888780; margin-top: 2px; }
+
+  .edu-pill {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+  }
+
+  .edu-pill-blue   { background: #E6F1FB; color: #0C447C; }
+  .edu-pill-green  { background: #E2F5EE; color: #0F6E56; }
+  .edu-pill-orange { background: #FEF0E6; color: #A83B00; }
+  .edu-pill-purple { background: #F0EEFF; color: #4B3BAD; }
+  .edu-pill-yellow { background: #FFF9E6; color: #7A5900; }
+  .edu-pill-red    { background: #FEECEC; color: #9E1B1B; }
+
+  .edu-body { font-size: 13.5px; color: #5f5e5a; line-height: 1.7; }
+  .edu-body p { margin-bottom: 0.6rem; }
+  .edu-body p:last-child { margin-bottom: 0; }
+  .edu-body strong { color: #1a1a18; }
+
+  .edu-key-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 0.65rem 0; }
+
+  .edu-key {
+    background: #f5f4f0;
+    border: 0.5px solid #d3d1c7;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 12.5px;
+    color: #3a3a38;
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .edu-key strong {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888780;
+    margin-bottom: 3px;
+  }
+
+  .edu-flow { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 0.65rem 0; }
+
+  .edu-flow-step {
+    background: #f5f4f0;
+    border-radius: 8px;
+    padding: 6px 11px;
+    font-size: 12.5px;
+    color: #3a3a38;
+    border: 0.5px solid #d3d1c7;
+  }
+
+  .edu-flow-arrow { color: #b4b2a9; font-size: 14px; }
+
+  .edu-callout {
+    background: #f5f4f0;
+    border-left: 3px solid #7F77DD;
+    border-radius: 0 8px 8px 0;
+    padding: 8px 12px;
+    margin: 0.65rem 0;
+    font-size: 13px;
+    color: #3a3a38;
+    line-height: 1.6;
+  }
+
+  .edu-callout-warn  { border-left-color: #D85A30; background: #FFF4ED; color: #7C3100; }
+  .edu-callout-green { border-left-color: #1D9E75; background: #E2F5EE; color: #085041; }
+
+  .edu-table-mini { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 0.65rem 0; }
+  .edu-table-mini th { background: #f1efe8; padding: 5px 9px; font-weight: 600; color: #3a3a38; border-bottom: 1px solid #d3d1c7; text-align: left; }
+  .edu-table-mini td { padding: 5px 9px; border-bottom: 0.5px solid #f1efe8; color: #5f5e5a; }
+  .edu-table-mini tr:last-child td { border-bottom: none; }
+
+  @media print {
+    .edu-card {
+      break-inside: avoid;
+      margin-bottom: 0.7rem;
+      padding: 0.75rem 1rem;
+      border: 0.5px solid #ccc;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <img class="logo" src="finyo_logo.png" alt="Finyo">
+      <span class="doc-title">Educação Financeira</span>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-card-header">
+      <div class="edu-icon edu-icon-blue">📊</div>
+      <div><div class="edu-card-title">1. Selic e IPCA</div><div class="edu-card-subtitle">Os dois termômetros da economia brasileira</div></div>
+    </div>
+    <span class="edu-pill edu-pill-blue">Taxa de Juros &amp; Inflação</span>
+    <div class="edu-body">
+      <div class="edu-key-row">
+        <div class="edu-key"><strong>Selic</strong>Taxa básica de juros definida pelo Banco Central a cada 45 dias pelo COPOM. É o "custo do dinheiro" na economia. Hoje: <strong>14,75% ao ano</strong>.</div>
+        <div class="edu-key"><strong>IPCA</strong>Índice de Preços ao Consumidor Amplo — mede a inflação oficial do Brasil. Quanto os preços subiram no período.</div>
+      </div>
+      <p>A relação entre Selic e inflação é <strong>inversa</strong>. O Banco Central usa a Selic como ferramenta para controlar os preços:</p>
+      <div class="edu-flow">
+        <div class="edu-flow-step">💸 Inflação sobe</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">BC aumenta a Selic</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">Crédito fica mais caro</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">Consumo cai</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">Preços arrefecem</div>
+      </div>
+      <div class="edu-flow">
+        <div class="edu-flow-step">📉 Economia fraca</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">BC reduz a Selic</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">Crédito fica mais barato</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">Consumo aumenta</div><div class="edu-flow-arrow">→</div>
+        <div class="edu-flow-step">Economia aquece</div>
+      </div>
+      <div class="edu-callout edu-callout-green">💡 <strong>Para os seus investimentos:</strong> com a Selic em 14,75% a.a., a renda fixa está muito atraente. Com a Selic baixa, faz sentido diversificar para outros ativos.</div>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-card-header">
+      <div class="edu-icon edu-icon-green">🏦</div>
+      <div><div class="edu-card-title">2. CDB e CDI</div><div class="edu-card-subtitle">Emprestando dinheiro ao banco — e sendo pago por isso</div></div>
+    </div>
+    <span class="edu-pill edu-pill-green">Renda Fixa</span>
+    <div class="edu-body">
+      <div class="edu-key-row">
+        <div class="edu-key"><strong>CDB</strong>Certificado de Depósito Bancário. Ao comprar um CDB, você está emprestando dinheiro ao banco. Em troca, o banco paga juros.</div>
+        <div class="edu-key"><strong>CDI</strong>Certificado de Depósito Interbancário. Taxa que os bancos cobram entre si em empréstimos de curtíssimo prazo. Fica muito próxima da Selic.</div>
+      </div>
+      <p>A rentabilidade do CDB é <strong>expressa em % do CDI</strong>. Veja o que isso significa na prática com a taxa atual:</p>
+      <div class="edu-callout edu-callout-green" style="margin-bottom:8px;">📌 <strong>CDI atual: 14,65% ao ano</strong> &nbsp;<span style="font-size:11px;">(referência: abril/2026)</span></div>
+      <table class="edu-table-mini">
+        <thead><tr><th>CDB contratado</th><th>CDI (14,65% a.a.)</th><th>Você recebe por ano</th></tr></thead>
+        <tbody>
+          <tr><td>90% do CDI</td><td>14,65%</td><td>13,19%</td></tr>
+          <tr><td>100% do CDI</td><td>14,65%</td><td>14,65%</td></tr>
+          <tr><td>110% do CDI</td><td>14,65%</td><td><strong>16,12%</strong></td></tr>
+          <tr><td>120% do CDI</td><td>14,65%</td><td><strong>17,58%</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="edu-callout">📌 Quanto maior o % do CDI e quanto maior o prazo, geralmente maior o rendimento — e menor a liquidez. CDBs abaixo de 100% do CDI devem ser questionados.</div>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-card-header">
+      <div class="edu-icon edu-icon-orange">⚖️</div>
+      <div><div class="edu-card-title">3. Spread Bancário</div><div class="edu-card-subtitle">A diferença entre o que o banco paga e o que cobra</div></div>
+    </div>
+    <span class="edu-pill edu-pill-orange">Como os bancos ganham dinheiro</span>
+    <div class="edu-body">
+      <p>O spread bancário é a diferença entre a <strong>taxa que o banco paga</strong> ao captar dinheiro (como no CDB) e a <strong>taxa que cobra</strong> ao emprestar (como no crédito pessoal).</p>
+      <div class="edu-key-row">
+        <div class="edu-key"><strong>Banco capta</strong>Paga ~100% do CDI no CDB ao investidor (~14,65% a.a.)</div>
+        <div class="edu-key"><strong>Banco empresta</strong>Cobra ~2% ao mês (~27% ao ano) no crédito pessoal</div>
+        <div class="edu-key"><strong>Spread bruto</strong>Diferença de ~12% ao ano — mas não é lucro líquido</div>
+      </div>
+      <p>Do spread bruto, o banco ainda precisa cobrir custos obrigatórios:</p>
+      <div class="edu-key-row">
+        <div class="edu-key"><strong>Depósito Compulsório</strong>Parte do dinheiro captado fica "travada" no Banco Central como reserva obrigatória — esse valor não rende para o banco.</div>
+        <div class="edu-key"><strong>Contribuição ao FGC</strong>Os bancos pagam uma taxa periódica ao Fundo Garantidor de Créditos para financiar a proteção dos depositantes.</div>
+      </div>
+      <div class="edu-callout edu-callout-warn">⚠️ O spread bancário no Brasil é um dos mais altos do mundo. Por isso, quitar dívidas com juros altos é sempre prioridade antes de investir.</div>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-card-header">
+      <div class="edu-icon edu-icon-purple">🎯</div>
+      <div><div class="edu-card-title">4. Benchmark</div><div class="edu-card-subtitle">A régua que mede se um investimento está bom ou não</div></div>
+    </div>
+    <span class="edu-pill edu-pill-purple">Comparação de performance</span>
+    <div class="edu-body">
+      <p>Benchmark é o <strong>índice de referência</strong> usado para avaliar se um investimento está performando bem. Não basta olhar o retorno em números absolutos — é preciso comparar com algo.</p>
+      <table class="edu-table-mini">
+        <thead><tr><th>Tipo de investimento</th><th>Benchmark usual</th></tr></thead>
+        <tbody>
+          <tr><td>CDB, Fundos DI, LCI, LCA, BB Rende Fácil</td><td>CDI</td></tr>
+          <tr><td>Fundos de renda fixa atrelados à inflação</td><td>IPCA + taxa</td></tr>
+          <tr><td>Previdência privada (perfil conservador)</td><td>CDI ou IPCA+</td></tr>
+          <tr><td>Previdência privada (perfil arrojado)</td><td>Ibovespa ou multimercado</td></tr>
+          <tr><td>Fundos de ações brasileiras</td><td>Ibovespa</td></tr>
+          <tr><td>FIIs (Fundos de Investimento Imobiliário)</td><td>IFIX</td></tr>
+          <tr><td>Fundos internacionais</td><td>S&amp;P 500, MSCI World</td></tr>
+        </tbody>
+      </table>
+      <div class="edu-callout edu-callout-green">💡 <strong>Exemplo prático:</strong> se o seu fundo de renda fixa rendeu 13% no ano, mas o CDI foi 14,65%, o fundo ficou <strong>abaixo do benchmark</strong> — você teria ganho mais com um CDB simples de liquidez diária, pagando menos taxa.</div>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-card-header">
+      <div class="edu-icon edu-icon-yellow">🛡️</div>
+      <div><div class="edu-card-title">5. FGC — Fundo Garantidor de Créditos</div><div class="edu-card-subtitle">O "seguro" dos seus investimentos em renda fixa</div></div>
+    </div>
+    <span class="edu-pill edu-pill-yellow">Proteção e segurança</span>
+    <div class="edu-body">
+      <p>O FGC é uma entidade privada, sem fins lucrativos, que <strong>protege os investidores</strong> em caso de falência ou intervenção de uma instituição financeira. Os próprios bancos contribuem periodicamente para financiar esse fundo.</p>
+      <div class="edu-key-row">
+        <div class="edu-key"><strong>O que protege</strong>CDB · LCI · LCA · Poupança · LIG · RDB · Letras de câmbio</div>
+        <div class="edu-key"><strong>Limite por CPF/instituição</strong>Até R$ 250.000 por banco</div>
+        <div class="edu-key"><strong>Limite global</strong>Até R$ 1.000.000 por CPF (em 4 anos)</div>
+      </div>
+      <p><strong>Como funciona na prática:</strong> se você tem R$ 200.000 em CDB no Banco X e ele vai à falência, o FGC restitui os R$ 200.000. Se tiver R$ 300.000 no mesmo banco, R$ 50.000 ficam sem cobertura.</p>
+      <div class="edu-callout">📌 <strong>Estratégia:</strong> para valores acima de R$ 250.000, distribua entre diferentes instituições para maximizar a cobertura do FGC.</div>
+      <div class="edu-callout edu-callout-warn">⚠️ O FGC <strong>não cobre</strong> fundos de investimento, ações, debêntures ou títulos do Tesouro Direto — esses têm outras formas de proteção.</div>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-card-header">
+      <div class="edu-icon edu-icon-red">🚨</div>
+      <div><div class="edu-card-title">6. Título de Capitalização</div><div class="edu-card-subtitle">Por que isso não é considerado um investimento</div></div>
+    </div>
+    <span class="edu-pill edu-pill-red">Atenção — Não é investimento</span>
+    <div class="edu-body">
+      <p>Um título de capitalização é um produto em que você faz depósitos periódicos, concorre a <strong>sorteios</strong> e, ao final, recebe de volta <strong>parte do que depositou</strong>.</p>
+      <div class="edu-key-row">
+        <div class="edu-key"><strong>Como parece</strong>"Você poupa, concorre a prêmios e ainda resgata no final"</div>
+        <div class="edu-key"><strong>Como funciona de fato</strong>Parte do que você paga vai para sorteios e para a empresa. O restante fica sem rendimento real.</div>
+      </div>
+      <div class="edu-callout edu-callout-warn">⚠️ <strong>Você pode receber menos do que pagou.</strong> O Índice de Restituição costuma ficar entre 70% e 95% do total depositado. A diferença é o lucro da empresa emissora.</div>
+      <p><strong>Mas e os prêmios?</strong> É possível ganhar — mas depende exclusivamente da sorte. Na prática, a grande maioria dos titulares não ganha nenhum prêmio. Quando comparamos a probabilidade de ganho com o custo real do produto, o resultado quase sempre é desfavorável.</p>
+      <div class="edu-callout edu-callout-warn">🚫 <strong>Título de capitalização não é investimento.</strong> Não tem rendimento garantido, pode gerar perda, tem baixa liquidez e não conta com cobertura do FGC. É classificado pela Susep como produto de seguro/poupança especulativa, não como aplicação financeira.</div>
+      <div class="edu-callout edu-callout-green">💡 <strong>Alternativa:</strong> o mesmo valor mensal aplicado em um CDB de liquidez diária (100% do CDI = 14,65% a.a.) rende de forma previsível, pode ser resgatado a qualquer momento e conta com cobertura do FGC.</div>
+    </div>
+  </div>
+
+  <div class="print-instructions">
+    <p class="print-step"><span class="step-num">1</span> Baixe e abra o arquivo diretamente no seu navegador (duplo clique no .html)</p>
+    <p class="print-step"><span class="step-num">2</span> Clique no botão abaixo — ou use <kbd>Ctrl+P</kbd> (Windows) / <kbd>Cmd+P</kbd> (Mac)</p>
+    <p class="print-step"><span class="step-num">3</span> Na janela de impressão, escolha <strong>"Salvar como PDF"</strong></p>
+  </div>
+  <button class="print-btn" onclick="window.print()">Imprimir / Salvar como PDF</button>
+  <p class="no-print-note">O botão e estas instruções não aparecem no PDF final.</p>
+
+</div>
+</body>
+</html>

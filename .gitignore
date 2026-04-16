@@ -6,3 +6,4 @@ dist
 # Client templates
 client-templates/*.html
 !client-templates/action_plan_template.html
+!client-templates/educacao_financeira_1.html
