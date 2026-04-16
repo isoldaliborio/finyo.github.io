@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano de Ação — Finyo</title>
+<link rel="stylesheet" href="action_plan_template.css">
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <img class="logo" src="finyo_logo.png" alt="Finyo">
+      <span class="doc-title">Plano de Ação</span>
+    </div>
+    <div class="header-right">
+      <div class="client-name-wrap">
+        Cliente:&nbsp;<input class="client-name-input" type="text" placeholder="Nome da cliente" spellcheck="false">
+      </div>
+      <span class="doc-date">{{DATA DO DOCUMENTO}}</span>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="dot dot-ok" style="margin-top:0"></div> Ponto a cobrir</div>
+    <div class="legend-item"><div class="dot dot-warn" style="margin-top:0"></div> Ação necessária</div>
+    <div class="legend-item"><div class="dot dot-q" style="margin-top:0"></div> Informação a levantar</div>
+  </div>
+
+  <!-- COMPONENTE: summary-box -->
+  <div class="summary-box">
+    <div class="summary-box-header"><span class="summary-box-title">{{TÍTULO DA CAIXA RESUMO}}</span></div>
+    <div class="item"><div class="dot dot-ok"></div><div>{{PONTO A COBRIR — texto do item.}}</div></div>
+    <div class="item"><div class="dot dot-warn"></div><div>{{AÇÃO NECESSÁRIA — texto do item.}}</div></div>
+    <div class="item"><div class="dot dot-q"></div><div>{{INFORMAÇÃO A LEVANTAR — texto do item.}}</div></div>
+  </div>
+
+  <!-- COMPONENTE: topic (numere em sequência: 1, 2, 3...) -->
+  <div class="topic">
+    <div class="topic-header"><span class="topic-number">{{N}}</span><span class="topic-title">{{TÍTULO DO TÓPICO}}</span></div>
+    <div class="item"><div class="dot dot-ok"></div><div>{{PONTO A COBRIR — texto do item.}}</div></div>
+    <div class="item"><div class="dot dot-warn"></div><div><strong>{{Destaque:}}</strong> {{AÇÃO NECESSÁRIA — texto do item.}}</div></div>
+    <div class="divider"></div>
+    <div class="sub-section-title">{{SUBTÍTULO DA SECÇÃO}}</div>
+    <div class="item"><div class="dot dot-q"></div><div>{{INFORMAÇÃO A LEVANTAR — texto do item.}}
+      <div class="sublabel">{{Nota auxiliar opcional, em texto menor e cinza.}}</div>
+    </div></div>
+    <!-- COMPONENTE: warning (colocar dentro de um topic) -->
+    <div class="warning">
+      <p>⚠️ <strong>Atenção:</strong> {{TEXTO DO AVISO — chamada de atenção relevante para este tópico.}}</p>
+    </div>
+  </div>
+
+  <!-- COMPONENTE: note -->
+  <div class="note">
+    <p>{{TEXTO DA NOTA FINAL, com eventual <strong>destaque em negrito</strong>.}}</p>
+  </div>
+
+  <div class="print-instructions">
+    <p class="print-step"><span class="step-num">1</span> Descarregue e abra o ficheiro directamente no seu browser (duplo clique no .html)</p>
+    <p class="print-step"><span class="step-num">2</span> Clique no botão abaixo — ou use <kbd>Ctrl+P</kbd> (Windows) / <kbd>Cmd+P</kbd> (Mac)</p>
+    <p class="print-step"><span class="step-num">3</span> Na janela de impressão, escolha <strong>"Guardar como PDF"</strong></p>
+  </div>
+  <button class="print-btn" onclick="window.print()">Imprimir / Guardar como PDF</button>
+  <p class="no-print-note">O botão e estas instruções não aparecem no PDF final.</p>
+
+</div>
+</body>
+</html>
